@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         RecyclerView recyclerView = findViewById(R.id.mainRecyclerView);
-        List<Beer> beerList = Arrays.asList(Beer.beers);
+        List<Beer> beerList = Arrays.asList(Beers.getAllBeers());
         RecyclerViewSimpleAdapter<Beer> adapter = new RecyclerViewSimpleAdapter<>(beerList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);

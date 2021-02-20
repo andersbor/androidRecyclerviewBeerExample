@@ -7,13 +7,6 @@ public class Beer implements Serializable {
     private String name;
     private double abv; // alcohol by volume
 
-    public static final Beer[] beers = new Beer[]{
-            new Beer(1, "Carlsberg", 4.6),
-            new Beer(2, "Tuborg", 4.6),
-            new Beer(3, "Singha", 5.0),
-            new Beer(4, "Heineken", 5.0)
-    };
-
     public Beer() {
     }
 
